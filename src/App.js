@@ -14,9 +14,10 @@ class App extends Component {
 
   changeHandler = (event) => {
     this.setState({
-      userOutputs: [
-        {name: event.target.value},
-      ]
+      // userOutputs: [
+      //   {name: event.target.value},
+      // ]
+      name:event.target.value
     })
   }
   render() {
