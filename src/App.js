@@ -6,10 +6,10 @@ import './UserOutput/UserOutput.css';
 import './UserInput/UserInput.css'
 class App extends Component {
   state = {
-    userOutputs:[
-      {name: 'Hannah1' }
-    ]
-      
+    // userOutputs:[
+    //   {name: 'Hannah1' }
+    // ]
+      name:'hannah1'
   }
 
   changeHandler = (event) => {
@@ -45,8 +45,10 @@ class App extends Component {
         </ol>
         
         <UserOutput name='Hannah'/>
-        <UserOutput name={this.state.userOutputs[0].name}/>
-        <UserInput name={this.state.userOutputs[0].name} changed={this.changeHandler} ></UserInput>
+        {/* <UserOutput name={this.state.userOutputs[0].name}/> */}
+        <UserOutput name={this.state.name}/>
+        {/* <UserInput name={this.state.userOutputs[0].name} changed={this.changeHandler} ></UserInput> */}
+        <UserInput name={this.state.name} changed={this.changeHandler} ></UserInput>
 
       </div>
     );
